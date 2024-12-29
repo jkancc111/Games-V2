@@ -111,6 +111,8 @@ local function createGameButton(placeName, placeId, scriptUrl)
 end
 
 -- Create buttons for each game
+createGameButton("PETS GO! ✨", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
+
 createGameButton("[🎁XMAS] Blox Fruits", 2753915549, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/BloxFruit.txt")
 
 createGameButton("Supermarket Simulator", 96462622512177, "https://raw.githubusercontent.com/jkancc111/Games/main/SupermarketSimulator.txt")
