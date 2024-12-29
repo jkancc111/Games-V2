@@ -68,8 +68,8 @@ local function CreateRecomend(placeName, placeIdOrCallback, scriptUrl)
     end)
 end
 
-CreateRecomend("PETS GO! ✨ [NEW]", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
-CreateRecomend("[🎃] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt")
+CreateRecomend("PETS GO! ✨", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
+CreateRecomend("[UPD] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt")
 CreateRecomend("[🎁XMAS] Blox Fruits", function()
     local bloxFruitIds = {
         2753915549,  -- First Sea
@@ -115,8 +115,3 @@ createGameButton("Supermarket Simulator", 96462622512177, "https://raw.githubuse
 
 createGameButton("[🎅Event] ⚔️Dungeon RNG", 17534163435, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DungeonRNG.txt")
 
-createGameButton("[UPD] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt")
-
-createGameButton("PETS GO! ✨", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
-
-createGameButton("[🎁XMAS] Blox Fruits", 2753915549, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/BloxFruit.txt")
