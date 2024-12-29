@@ -68,9 +68,9 @@ local function CreateRecomend(placeName, placeIdOrCallback, scriptUrl)
     end)
 end
 
-CreateRecomend("PETS GO! ✨ [NEW]", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/PetsGo.txt")
-CreateRecomend("[🎃] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/Fisch.txt")
-CreateRecomend("🔥 Blox Fruits", function()
+CreateRecomend("PETS GO! ✨ [NEW]", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
+CreateRecomend("[🎃] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt")
+CreateRecomend("[🎁XMAS] Blox Fruits", function()
     local bloxFruitIds = {
         2753915549,  -- First Sea
         4442272183,  -- Second Sea
@@ -88,7 +88,7 @@ CreateRecomend("🔥 Blox Fruits", function()
     end
     
     if isValidGame then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/BloxFruit.txt", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jkancc111/Games-V2/main/BloxFruit.txt", true))()
         Window:Destroy()
     else
         Hawk:AddNotifications():Notification("Error", "Wrong game!", "Error", 3)
@@ -120,7 +120,3 @@ createGameButton("[UPD] Fisch", 16732694052, "https://raw.githubusercontent.com/
 createGameButton("PETS GO! ✨", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
 
 createGameButton("[🎁XMAS] Blox Fruits", 2753915549, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/BloxFruit.txt")
-
-createGameButton("Supermarket Simulator", 96462622512177, "https://raw.githubusercontent.com/jkancc111/Games/main/SupermarketSimulator.txt")
-createGameButton("🗝️Lootify[🎄UPD]", 16498193900, "https://raw.githubusercontent.com/jkancc111/Games/main/Lootify.txt")
-createGameButton("Dungeon RNG", 17534163435, "https://raw.githubusercontent.com/jkancc111/Games/main/DungeonRNG.lua")
