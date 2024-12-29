@@ -111,6 +111,8 @@ local function createGameButton(placeName, placeId, scriptUrl)
 end
 
 -- Create buttons for each game
+createGameButton("[🎅Event] ⚔️Dungeon RNG", 17534163435, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DungeonRNG.txt")
+
 createGameButton("[UPD] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt")
 
 createGameButton("PETS GO! ✨", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt")
