@@ -112,6 +112,6 @@ end
 
 -- Create buttons for each game
 createGameButton("Supermarket Simulator", 96462622512177, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/SupermarketSimulator.txt")
-
+createGameButton("🗝️Lootify[🌍UPD]", 16498193900, "https://raw.githubusercontent.com/jkancc111/Games-V2/refs/heads/main/Lootify.txt")
 createGameButton("[🎅Event] ⚔️Dungeon RNG", 17534163435, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DungeonRNG.txt")
 
