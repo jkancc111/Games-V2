@@ -52,21 +52,49 @@ creditsInfo:Label("• Special thanks to all contributors")
 
 local Recome = tab1:Section("🔥 Frequently executed scripts")
 
-local function CreateRecomend(placeName, placeId, scriptUrl)
+local function CreateRecomend(placeName, placeIdOrCallback, scriptUrl)
     Recome:Button(placeName, "Load script for " .. placeName, function()
-        if game.PlaceId == placeId then
-            loadstring(game:HttpGet(scriptUrl, true))()
+        if type(placeIdOrCallback) == "function" then
+            placeIdOrCallback()
         else
-            Hawk:AddNotifications():Notification("Error", "Wrong game!", "Error", 3)
-            game.Players.LocalPlayer:Kick("Wrong game! Please join the correct game to use this script.")
+            if game.PlaceId == placeIdOrCallback then
+                loadstring(game:HttpGet(scriptUrl, true))()
+                Window:Destroy()
+            else
+                Hawk:AddNotifications():Notification("Error", "Wrong game!", "Error", 3)
+                game.Players.LocalPlayer:Kick("Wrong game! Please join the correct game to use this script.")
+            end
         end
-        Window:Destroy()
     end)
 end
 
 CreateRecomend("PETS GO! ✨ [NEW]", 18901165922, "https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/PetsGo.txt")
 CreateRecomend("[🎃] Fisch", 16732694052, "https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/Fisch.txt")
-CreateRecomend("🔥 Blox Fruits", 2753915549, "https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/BloxFruit.txt")
+CreateRecomend("🔥 Blox Fruits", function()
+    local bloxFruitIds = {
+        2753915549,  -- First Sea
+        4442272183,  -- Second Sea
+        7449423635   -- Third Sea
+    }
+    
+    local currentGame = game.PlaceId
+    local isValidGame = false
+    
+    for _, gameId in pairs(bloxFruitIds) do
+        if currentGame == gameId then
+            isValidGame = true
+            break
+        end
+    end
+    
+    if isValidGame then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jkancc111/Games/refs/heads/main/BloxFruit.txt", true))()
+        Window:Destroy()
+    else
+        Hawk:AddNotifications():Notification("Error", "Wrong game!", "Error", 3)
+        game.Players.LocalPlayer:Kick("Wrong game! Please join Blox Fruits to use this script.")
+    end
+end)
 
 local gamesSection = tab1:Section("Supported Games (if it doesn't load, try running it again)")
 
@@ -83,8 +111,6 @@ local function createGameButton(placeName, placeId, scriptUrl)
 end
 
 -- Create buttons for each game
-createGameButton("🗝️Lootify[🌍UPD]", 16498193900, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Lootify.txt")
-
 createGameButton("Supermarket Simulator", 96462622512177, "https://raw.githubusercontent.com/jkancc111/Games/main/SupermarketSimulator.txt")
 createGameButton("🗝️Lootify[🎄UPD]", 16498193900, "https://raw.githubusercontent.com/jkancc111/Games/main/Lootify.txt")
 createGameButton("Dungeon RNG", 17534163435, "https://raw.githubusercontent.com/jkancc111/Games/main/DungeonRNG.lua")
