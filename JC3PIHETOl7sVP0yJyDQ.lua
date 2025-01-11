@@ -113,8 +113,6 @@ end
 -- Create buttons for each game
 createGameButton("[🎉RELEASE] Pet Star Simulator! 🐾", 86430667919924, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/StarPetSimulator.lua")
 
-createGameButton("[🎉RELEASE] Pet Star Simulator! 🐾", 86430667919924, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/StarPetSimulator.lua")
-
 createGameButton("Granny: Multiplayer", 4480809144, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/GrannyMultiplayer.txt")
 
 createGameButton("Supermarket Simulator", 96462622512177, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/SupermarketSimulator.txt")
