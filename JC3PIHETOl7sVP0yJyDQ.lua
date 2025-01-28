@@ -115,7 +115,7 @@ createGameButton("💎 Pet Mine!", 18853192637, "https://raw.githubusercontent.c
 
 createGameButton("[2x🍀]Anime Slashing Simulator", 18956736354, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/AnimeSlashSim.txt")
 
-createGameButton("[UPD🦑] Car Training🚗", 111130915266245, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/CarTraining.txt")
+-- createGameButton("[UPD🦑] Car Training🚗", 111130915266245, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/CarTraining.txt") -- maintenance
 
 createGameButton("[🎉RELEASE] Pet Star Simulator! 🐾", 86430667919924, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/StarPetSimulator.lua")
 
