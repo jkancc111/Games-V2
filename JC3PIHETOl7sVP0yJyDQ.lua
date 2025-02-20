@@ -111,6 +111,8 @@ local function createGameButton(placeName, placeId, scriptUrl)
 end
 
 -- Create buttons for each game
+createGameButton("Dead Rails [Alpha]", 116495829188952, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DeadRails.txt")
+
 createGameButton("💎 Pet Mine!", 18853192637, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetMine.txt")
 
 createGameButton("[2x🍀]Anime Slashing Simulator", 18956736354, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/AnimeSlashSim.txt")
