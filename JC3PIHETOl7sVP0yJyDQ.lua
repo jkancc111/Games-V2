@@ -111,7 +111,30 @@ local function createGameButton(placeName, placeId, scriptUrl)
 end
 
 -- Create buttons for each game
-createGameButton("Dead Rails [Alpha]", nil, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DeadRails.txt")
+CreateRecomend("Dead Rails [Alpha]", function()
+    local deadRailsIds = {
+        116495829188952,  -- Map 1
+        70876832253163   -- Map 2
+    }
+    
+    local currentGame = game.PlaceId
+    local isValidGame = false
+    
+    for _, gameId in pairs(deadRailsIds) do
+        if currentGame == gameId then
+            isValidGame = true
+            break
+        end
+    end
+    
+    if isValidGame then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jkancc111/Games-V2/main/DeadRails.txt", true))()
+        Window:Destroy()
+    else
+        Hawk:AddNotifications():Notification("Error", "Wrong game!", "Error", 3)
+        game.Players.LocalPlayer:Kick("Wrong game! Please join Dead Rails to use this script.")
+    end
+end)
 
 createGameButton("💎 Pet Mine!", 18853192637, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetMine.txt")
 
