@@ -100,7 +100,7 @@ local gamesSection = tab1:Section("Supported Games (if it doesn't load, try runn
 
 local function createGameButton(placeName, placeId, scriptUrl)
     gamesSection:Button(placeName, "Load script for " .. placeName, function()
-        if game.PlaceId == placeId then
+        if placeId == nil or game.PlaceId == placeId then
             loadstring(game:HttpGet(scriptUrl, true))()
         else
             Hawk:AddNotifications():Notification("Error", "Wrong game!", "Error", 3)
@@ -111,7 +111,7 @@ local function createGameButton(placeName, placeId, scriptUrl)
 end
 
 -- Create buttons for each game
-createGameButton("Dead Rails [Alpha]", 116495829188952, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DeadRails.txt")
+createGameButton("Dead Rails [Alpha]", nil, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DeadRails.txt")
 
 createGameButton("💎 Pet Mine!", 18853192637, "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetMine.txt")
 
