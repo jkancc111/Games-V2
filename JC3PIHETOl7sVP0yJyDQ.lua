@@ -3,16 +3,16 @@ local function runAppropriateScript()
     local gameId = game.PlaceId
     
     local scripts = {
-        [18901165922] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt", -- PETS GO! ✨
-        [16732694052] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt", -- [UPD] Fisch
-        [18853192637] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetMine.txt", -- 💎 Pet Mine!
-        [18956736354] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/AnimeSlashSim.txt", -- [2x🍀]Anime Slashing Simulator
-        [111130915266245] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/CarTraining.txt", -- [UPD🦑] Car Training🚗
-        [86430667919924] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/StarPetSimulator.lua", -- [🎉RELEASE] Pet Star Simulator! 🐾
-        [4480809144] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/GrannyMultiplayer.txt", -- Granny: Multiplayer
-        [96462622512177] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/SupermarketSimulator.txt", -- Supermarket Simulator
-        [16498193900] = "https://raw.githubusercontent.com/jkancc111/Games-V2/refs/heads/main/Lootify.txt", -- 🗝️Lootify[🌍UPD]
-        [17534163435] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DungeonRNG.txt", -- [🎅Event] ⚔️Dungeon RNG
+        [18901165922] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetsGo.txt",
+        [16732694052] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/Fisch.txt",
+        [18853192637] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/PetMine.txt",
+        [18956736354] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/AnimeSlashSim.txt",
+        [111130915266245] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/CarTraining.txt", 
+        [86430667919924] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/StarPetSimulator.lua",
+        [4480809144] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/GrannyMultiplayer.txt",
+        [96462622512177] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/SupermarketSimulator.txt", 
+        [16498193900] = "https://raw.githubusercontent.com/jkancc111/Games-V2/refs/heads/main/Lootify.txt",
+        [17534163435] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DungeonRNG.txt",
     }
     
     local gameGroups = {
