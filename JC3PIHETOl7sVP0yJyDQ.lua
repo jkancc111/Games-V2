@@ -17,7 +17,7 @@ local function runAppropriateScript()
     
     local gameGroups = {
         ["Blox Fruits"] = {
-            ids = {2753915549, 4442wwww272183, 7449423635}, -- First, Second, Third Sea
+            ids = {2753915549, 4442272183, 7449423635}, -- First, Second, Third Sea
             url = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/BloxFruit.txt"
         },
         ["Dead Rails"] = {
