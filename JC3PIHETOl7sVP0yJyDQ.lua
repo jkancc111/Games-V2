@@ -13,9 +13,8 @@ local function runAppropriateScript()
         [96462622512177] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/SupermarketSimulator.txt", 
         [16498193900] = "https://raw.githubusercontent.com/jkancc111/Games-V2/refs/heads/main/Lootify.txt",
         [17534163435] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/DungeonRNG.txt",
-    
         [87039211657390] = "https://raw.githubusercontent.com/jkancc111/Games-V2/main/AriseCrossover.txt", -- Arise Crossover}
-    
+    }
     local gameGroups = {
         ["Blox Fruits"] = {
             ids = {2753915549, 4442272183, 7449423635}, -- First, Second, Third Sea
