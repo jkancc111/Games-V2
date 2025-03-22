@@ -28,6 +28,8 @@ local function runAppropriateScript()
     
     if scripts[gameId] then
         loadstring(game:HttpGet(scripts[gameId], true))()
+        print("Detected Game: " .. gameId)
+        print("Trying to load script...")
         return true
     end
     
